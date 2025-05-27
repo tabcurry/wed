@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스몰웨딩 포털 - 웨딩 정보와 가격 비교의 모든 것</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header, footer {
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      display: flex;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    aside {
+      width: 25%;
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .content {
+      flex: 1;
+    }
+    .filter-section, .news-section, .listing {
+      background-color: #ffffff;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .listing h3, .news-section h3 {
+      margin-top: 0;
+    }
+    .listing p, .news-section p {
+      margin: 0.5rem 0;
+    }
+    footer {
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>스몰웨딩 포털</h1>
+    <p>전국 스몰웨딩 정보와 가격 비교를 한눈에!</p>
+  </header>
+
+  <nav>
+    <a href="#">홈</a>
+    <a href="#">업체 비교</a>
+    <a href="#">웨딩 팁</a>
+    <a href="#">후기 게시판</a>
+    <a href="#">고객센터</a>
+  </nav>
+
+  <main>
+    <aside>
+      <div class="news-section">
+        <h3>📢 최신 웨딩 소식</h3>
+        <p>[5월 특가] 스튜디오 패키지 할인</p>
+        <p>트렌드: 루프탑 웨딩 인기 상승</p>
+      </div>
+      <div class="news-section">
+        <h3>💡 웨딩 팁</h3>
+        <p>스몰웨딩 예산 절약하는 5가지 방법</p>
+        <p>야외예식 시 꼭 챙겨야 할 체크리스트</p>
+      </div>
+    </aside>
+
+    <div class="content">
+      <section class="filter-section">
+        <h3>🔎 조건별 업체 찾기</h3>
+        <label>지역:
+          <select>
+            <option>전체</option>
+            <option>서울</option>
+            <option>경기</option>
+            <option>부산</option>
+          </select>
+        </label>
+        <label>예식 유형:
+          <select>
+            <option>전체</option>
+            <option>실내</option>
+            <option>야외</option>
+            <option>한옥</option>
+          </select>
+        </label>
+        <label>예상 비용:
+          <select>
+            <option>전체</option>
+            <option>200만원 이하</option>
+            <option>200~400만원</option>
+            <option>400만원 이상</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="listing">
+        <h3>루시엔웨딩 (서울)</h3>
+        <p><strong>유형:</strong> 실내</p>
+        <p><strong>최대 인원:</strong> 50명</p>
+        <p><strong>예상 비용:</strong> 300~400만원</p>
+        <p><strong>특징:</strong> 고급 인테리어, 강남 위치</p>
+        <a href="https://example.com/lucien" target="_blank">상세 보기</a>
+      </section>
+
+      <section class="listing">
+        <h3>어반정원 (부산)</h3>
+        <p><strong>유형:</strong> 야외</p>
+        <p><strong>최대 인원:</strong> 80명</p>
+        <p><strong>예상 비용:</strong> 500~700만원</p>
+        <p><strong>특징:</strong> 가든 예식, 테이블 세팅 포함</p>
+        <a href="https://example.com/urban" target="_blank">상세 보기</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 스몰웨딩 포털 | 문의: info@smallwed.kr</p>
+  </footer>
+</body>
+</html>
